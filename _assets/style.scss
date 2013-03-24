@@ -18,16 +18,35 @@ header, footer {
     border-radius: 3px;
     &:hover, &.active { background-color: #fff; box-shadow: 0 0 2px rgba(0,0,0,0.3); }
   }
-
   div.nav * { opacity: 0.5; @include transition(all, 0.3s); }
   &:hover div.nav * { opacity: 1; }
   @include clearfix;
+}
+#cubes {
+  width: 16px; height: 16px; margin: 0 auto 10px;
+  background-image: url(/images/fav.png);
+  background-repeat: no-repeat;
+}
+
+@include keyframes(shake) {
+  0% {
+    @include transform(rotate(0deg));
+  }
+  25%  { @include transform(rotate(30deg)); }
+  100% {
+    @include transform(scale(-20deg));
+  }
 }
 
 header {
   padding: 36px 0 30px;
   text-align: center;
-  img { margin-bottom: 10px; }
+  a:hover { 
+    #cubes {
+      background-image: url(/images/fav-orange.png);
+      @include animation(shake 0.2s linear infinite);
+    }
+  }
   h1 { font-size: 16px; margin: 0; padding: 0; text-transform: uppercase; }
   p { margin: 5px 0 20px; }
   h1 a { color: darken($green, 25%); &:hover { color: darken($green, 35%); } }

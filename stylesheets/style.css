@@ -221,12 +221,72 @@ header, footer {
   header:after, footer:after {
     clear: both; }
 
+#cubes {
+  width: 16px;
+  height: 16px;
+  margin: 0 auto 10px;
+  background-image: url(/images/fav.png);
+  background-repeat: no-repeat; }
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: rotate(0deg); }
+
+  25% {
+    -webkit-transform: rotate(30deg); }
+
+  100% {
+    -webkit-transform: scale(-20deg); } }
+
+@-moz-keyframes shake {
+  0% {
+    -moz-transform: rotate(0deg); }
+
+  25% {
+    -moz-transform: rotate(30deg); }
+
+  100% {
+    -moz-transform: scale(-20deg); } }
+
+@-ms-keyframes shake {
+  0% {
+    -ms-transform: rotate(0deg); }
+
+  25% {
+    -ms-transform: rotate(30deg); }
+
+  100% {
+    -ms-transform: scale(-20deg); } }
+
+@-o-keyframes shake {
+  0% {
+    -o-transform: rotate(0deg); }
+
+  25% {
+    -o-transform: rotate(30deg); }
+
+  100% {
+    -o-transform: scale(-20deg); } }
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg); }
+
+  25% {
+    transform: rotate(30deg); }
+
+  100% {
+    transform: scale(-20deg); } }
+
 header {
   padding: 36px 0 30px;
   text-align: center;
   margin-bottom: 20px; }
-  header img {
-    margin-bottom: 10px; }
+  header a:hover #cubes {
+    background-image: url(/images/fav-orange.png);
+    -webkit-animation: shake 0.2s linear infinite;
+    -moz-animation: shake 0.2s linear infinite;
+    animation: shake 0.2s linear infinite; }
   header h1 {
     font-size: 16px;
     margin: 0;
