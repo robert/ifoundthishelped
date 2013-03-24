@@ -6,32 +6,26 @@
     {% include head.html %}
     {% include ga.html %}
   </head>
-  <body>
+  <body id="post">
     
-    <div id="container">
-      {% include header.html %}
-      <h2>
-        <a href='{{ page.url }}'>
-          {{ page.title }}
-        </a>
-      </h2>
-      <span class='date'>{{ page.date | date_to_string }}</span>
-      {{ content }}
-
-      <div class="paging">
-        {% if page.previous %}
-          Before this: <a href="{{ page.previous.url }}">
-            {{page.previous.title}}
+    {% include header.html %}
+    <div class="wrapper">
+      <div id="content">
+        <h2>
+          <a href="{{ post.url }}">
+            {{ page.title }}
           </a><br />
-        {% endif %}
-        {% if page.next %}
-          After this: <a href="{{page.next.url}}">
-            {{page.next.title}}
-          </a>
-        {% endif %}
+          <span class="small muted">{{ page.date | date_to_string }} - </span>
+          <span class="small muted" data-time="{{ page.date }}">{{ page.date | date_to_string }}</span>
+        </h2>
+        <div class="text-body">{{ content }}</div>
+
+        {% include social_links.html %}
+        {% include disqus.html %}
       </div>
-      {% include footer.html %}
+      {% include sidebar.html %}
     </div>
+    {% include footer.html %}
 
   </body>
 </html>

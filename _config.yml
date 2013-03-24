@@ -1,6 +1,7 @@
-permalink:    pretty
-markdown:     rdiscount
-title:        I Found This Helped
-description:  Unscientific anecdotes about chronic pain
-url:          http://ifoundthishelped.com
-auto:         true
+permalink:        pretty
+markdown:         rdiscount
+title:            I found this helped
+description:      Unscientific anecdotes about chronic pain
+url:              http://ifoundthishelped.com
+auto:             true
+disqus_shortname: ifth

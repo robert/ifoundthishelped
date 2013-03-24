@@ -2,32 +2,83 @@
 @import "colours";
 
 body { 
+  &, * { -webkit-font-smoothing: antialiased; }
   background: $background;
-  color: #303030;
-  font-family: "Varela Round", helvetica, arial, sans-serif;
-  font-weight: 300;
-  font-size: 14px;
+  color: darken($green, 35%);
+  &, #{$all-text-inputs} { 
+    font-family: "Varela Round", helvetica, arial, sans-serif; 
+    font-size: 14px;
+  }
   line-height: 24px;
-  padding: 20px;
+  padding: 0;
+  margin: 0;
 }
 .hide { display: none; }
 .a-r { text-align: right; }
 .a-c { text-align: center; }
 .small { font-size: 11px }
 .pull-right { float: right; }
-.muted { color: #777; }
+.pull-left { float: left; }
+.muted { color: #999; }
 .colour-1 { color: #c94 }
 .colour-2 { color: #925}
 .colour-3 { color: #484 }
 .text-big { font-size: 24px; line-height: 1em; }
-
+img { vertical-align: middle; }
+form { margin: 0; }
+h1, h2, h3, h4, h5, h6 { font-weight: 400; }
 ul, li { margin: 0; padding: 0; list-style: none; }
+hr { 
+  border: 0; margin: 20px 0 30px;  text-align: center;
+  width: 100%; overflow: hidden; height: 10px;
+  &:before { 
+    content: "╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲"; 
+    color: #aaa; letter-spacing: -4px; font-size: 10px;
+  }
+}
+#{$all-text-inputs} {
+  font-family: "Varela Round", helvetica, arial, sans-serif;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px; margin: 0;
+  box-shadow: none; outline: none;
+  @include box-sizing(border-box);
+  padding: 4px 8px;
+}
 
 a, .as-link {
   @include transition(all, 0.3s);
   text-decoration: none; 
-  color: #4a8;
-  &:hover { color: #486 }
+  color: darken($blue, 10%);
+  &:active {
+    position: relative; top: 1px;
+  }
+  &:hover { color: darken($blue, 20%); }
+  &.button {
+    border-radius: 2px;
+    padding: 3px 7px;
+    margin: 10px 0;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,0.05);
+    color: darken($blue, 20%);
+    @include inline-block;
+    // &:hover { color: darken($blue, 20%); border-color: #ddd; }
+    &:hover { box-shadow: inset 0 1px 0 rgba(0,0,0,0.1); }
+    &.mini {
+      padding: 1px 8px;
+      font-size: 11px;
+      text-transform: uppercase;
+    }
+  }
+  &.text-link {
+    padding: 2px 0;
+    margin: 10px 0;
+    line-height: 1em;
+    border-bottom: 1px dotted #e0e0e0;
+    color: darken($blue, 0%);
+    @include inline-block;
+    &:hover { color: darken($blue, 10%); border-bottom: 1px solid $blue; }
+  }
   &.big-button {
     @include transition(all, 0.2s);
     display: block;
@@ -67,4 +118,9 @@ a, .as-link {
       &:hover { background: #308140; }
     }
   }
+}
+.two-ups {
+  width: 49%;
+  float: left;
+  &:not(:last-of-type) { margin-right: 2%; }
 }

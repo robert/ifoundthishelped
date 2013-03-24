@@ -4,6 +4,13 @@ jQuery(function() {
   $.each($("[data-time]"), function(index, ele) {
     return $(ele).html(prettyDate(new Date($(this).data("time"))));
   });
+  $(window).scroll(function() {
+    var offset, scroll_pos, sidebar_pos;
+    scroll_pos = window.pageYOffset;
+    sidebar_pos = $("#sidebar").offset().top;
+    offset = scroll_pos > sidebar_pos ? scroll_pos - sidebar_pos + 10 : 5;
+    return $("#sidebar").css("padding-top", offset + "px");
+  });
   $.each($("a[id]"), function(index, ele) {
     return $(ele).click(function(e) {
       e.stopImmediatePropagation();
@@ -14,7 +21,7 @@ jQuery(function() {
     return $(ele).click(function(e) {
       e.stopImmediatePropagation();
       console.log(e.currentTarget.innerText);
-      return _gaq.push(["_trackEvent", "Visits", "clicked on" + e.currentTarget.innerText, e.currentTarget.href]);
+      return _gaq.push(["_trackEvent", "Visits", "clicked on " + e.currentTarget.innerText, e.currentTarget.href]);
     });
   });
 });

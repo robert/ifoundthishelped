@@ -1,6 +1,6 @@
 ---
 layout: onepage
-title: About
+title: Archive
 ---
 
-about
+Archive
