@@ -1,0 +1,10 @@
+@import "bourbon/bourbon";
+@import "colours";
+@import "defaults";
+
+
+#container {
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+}

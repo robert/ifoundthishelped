@@ -1,0 +1,70 @@
+@import "bourbon/bourbon";
+@import "colours";
+
+body { 
+  background: $background;
+  color: #303030;
+  font-family: "Varela Round", helvetica, arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 20px;
+}
+.hide { display: none; }
+.a-r { text-align: right; }
+.a-c { text-align: center; }
+.small { font-size: 11px }
+.pull-right { float: right; }
+.muted { color: #777; }
+.colour-1 { color: #c94 }
+.colour-2 { color: #925}
+.colour-3 { color: #484 }
+.text-big { font-size: 24px; line-height: 1em; }
+
+ul, li { margin: 0; padding: 0; list-style: none; }
+
+a, .as-link {
+  @include transition(all, 0.3s);
+  text-decoration: none; 
+  color: #4a8;
+  &:hover { color: #486 }
+  &.big-button {
+    @include transition(all, 0.2s);
+    display: block;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 24px;
+    padding: 8px 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    border-width: 0;
+    border-style: solid;
+    border-color: #8ab;
+    background: #6f8f9f;
+    @include box-shadow(0 1px 2px rgba(0,0,0,0.3));
+    &:hover { 
+      background: #608090;
+      @include box-shadow( 0px 1px 1px rgba(0,0,0,0.2), inset 0 1px 3px rgba(255,255,255,0.55), inset 0 -1px 3px rgba(0,0,0,0.2));
+    }
+    &:active { @include box-shadow(inset 0 1px 2px rgba(0,0,0,0.4)); }
+    &.red {
+      border-color: #ddacac;
+      background: #bf6653;
+      &:hover { background: #bf4634; }
+    }
+    &.yellow {
+      border-color: #faddaa;
+      background: #d0a033;
+      &:hover { background: #cc9011; }
+    }
+    &.green {
+      border-color: #ddeed0;
+      background: #40914A;
+      &:hover { background: #308140; }
+    }
+  }
+}

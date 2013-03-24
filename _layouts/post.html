@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <meta content='{{ page.title }} - {{ site.title }}' name='title' />
+    <meta content='{{ page.title }} - {{ site.title }}' name='og:title' />
+    <title>{{ page.title }} - {{ site.title }}</title>
+    {% include head.html %}
+    {% include ga.html %}
+  </head>
+  <body>
+    
+    <div id="container">
+      {% include header.html %}
+      <h2>
+        <a href='{{ page.url }}'>
+          {{ page.title }}
+        </a>
+      </h2>
+      <span class='date'>{{ page.date | date_to_string }}</span>
+      {{ content }}
+
+      <div class="paging">
+        {% if page.previous %}
+          Before this: <a href="{{ page.previous.url }}">
+            {{page.previous.title}}
+          </a><br />
+        {% endif %}
+        {% if page.next %}
+          After this: <a href="{{page.next.url}}">
+            {{page.next.title}}
+          </a>
+        {% endif %}
+      </div>
+      {% include footer.html %}
+    </div>
+
+  </body>
+</html>
