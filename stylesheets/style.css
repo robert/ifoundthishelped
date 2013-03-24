@@ -221,16 +221,18 @@ header, footer {
     clear: both; }
 
 header {
-  padding: 30px 0;
+  padding: 36px 0 30px;
   text-align: center;
   margin-bottom: 20px; }
   header img {
-    margin-bottom: 15px; }
+    margin-bottom: 10px; }
   header h1 {
     font-size: 16px;
     margin: 0;
-    padding: 10px 0;
+    padding: 0;
     text-transform: uppercase; }
+  header p {
+    margin: 5px 0 20px; }
   header h1 a {
     color: #204f37; }
     header h1 a:hover {
