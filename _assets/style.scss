@@ -43,9 +43,11 @@ footer {
 }
 
 .wrapper {
+  @include box-sizing(border-box);
   width: 100%;
   max-width: 800px;
   margin: auto;
+  padding: 0 10px;
   position: relative;
   white-space: nowrap;
   > * { white-space: normal; }
@@ -56,20 +58,16 @@ footer {
   @include inline-block;
   @include box-sizing(border-box);
   vertical-align: top;
-  // min-height: 100%;
   padding: 10px 20px 10px 0;
 }
 h2 { margin-top: 0; font-size: 20px; }
 #sidebar {
   @include inline-block;
   @include box-sizing(border-box);
-  border-radius: 3px;
-  // min-height: 100%;
   padding: 5px 10px 10px;
   width: 30%;
   vertical-align: top;
   > section {
-    border-radius: 3px;
     margin-bottom: 15px;
     .item { padding: 0 15px 15px; }
     input { width: 100%; }

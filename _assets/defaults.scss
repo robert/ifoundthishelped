@@ -43,6 +43,7 @@ hr {
   box-shadow: none; outline: none;
   @include box-sizing(border-box);
   padding: 4px 8px;
+  -webkit-appearance: none;
 }
 
 a, .as-link {

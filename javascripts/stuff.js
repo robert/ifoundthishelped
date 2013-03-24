@@ -8,7 +8,7 @@ jQuery(function() {
     var offset, scroll_pos, sidebar_pos;
     scroll_pos = window.pageYOffset;
     sidebar_pos = $("#sidebar").offset().top;
-    offset = scroll_pos > sidebar_pos ? scroll_pos - sidebar_pos + 10 : 5;
+    offset = scroll_pos > sidebar_pos && $(window).width() > 640 ? scroll_pos - sidebar_pos + 10 : 5;
     return $("#sidebar").css("padding-top", offset + "px");
   });
   $.each($("a[id]"), function(index, ele) {

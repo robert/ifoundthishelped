@@ -6,7 +6,7 @@ jQuery ->
   $(window).scroll ->
     scroll_pos = window.pageYOffset
     sidebar_pos = $("#sidebar").offset().top
-    offset = if scroll_pos > sidebar_pos then scroll_pos - sidebar_pos + 10 else 5
+    offset = if (scroll_pos > sidebar_pos && $(window).width() > 640) then scroll_pos - sidebar_pos + 10 else 5
     $("#sidebar").css("padding-top", offset + "px")
   
 

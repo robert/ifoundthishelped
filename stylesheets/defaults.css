@@ -82,7 +82,8 @@ input[type="email"], input[type="number"], input[type="password"], input[type="s
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 4px 8px; }
+  padding: 4px 8px;
+  -webkit-appearance: none; }
 
 a, .as-link {
   -webkit-transition: all, 0.3s;
