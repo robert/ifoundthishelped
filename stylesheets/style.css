@@ -67,7 +67,7 @@ hr {
   overflow: hidden;
   height: 10px; }
   hr:before {
-    content: "╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲";
+    content: "╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲";
     color: #aaa;
     letter-spacing: -4px;
     font-size: 10px; }
@@ -199,11 +199,12 @@ header, footer {
     text-transform: uppercase;
     font-size: 12px;
     color: #303038;
-    padding: 0 20px;
-    line-height: 60px;
+    padding: 8px 10px;
+    line-height: 1em;
     border-radius: 3px; }
-    header a.link:hover, footer a.link:hover {
-      background-color: #f3f3f3; }
+    header a.link:hover, header a.link.active, footer a.link:hover, footer a.link.active {
+      background-color: #fff;
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.3); }
   header div.nav *, footer div.nav * {
     opacity: 0.5;
     -webkit-transition: all, 0.3s;
@@ -220,12 +221,15 @@ header, footer {
     clear: both; }
 
 header {
-  padding: 10px 0;
+  padding: 30px 0;
+  text-align: center;
   margin-bottom: 20px; }
+  header img {
+    margin-bottom: 15px; }
   header h1 {
     font-size: 16px;
     margin: 0;
-    padding: 18px 0;
+    padding: 10px 0;
     text-transform: uppercase; }
   header h1 a {
     color: #204f37; }
