@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <meta content='{{ site.title }}' name='title' />
+    <meta content='{{ site.title }}' name='og:title' />
+    <meta content='{{ site.description }}' name='description' />
+    <meta content='{{ site.description }}' name='og:description' />
+    <title>{{ site.title }}</title>
+    {% include head.html %}
+    {% include ga.html %}
+  </head>
+  <body>
+
+    <div id="container">
+      {% include header.html %}
+      <h2>{{page.title}}</h2>
+      {{ content }}
+      {% include footer.html %}
+    </div>
+
+  </body>
+</html>
