@@ -12,3 +12,13 @@
     }
   }
 }
+@media (max-width: 480px) {
+  header {
+    padding-top: 45px;
+    .nav.pull-right {
+      float: none;
+      position: absolute;
+      top: -52px; right: 5px;
+    }
+  }
+}

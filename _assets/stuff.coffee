@@ -3,11 +3,14 @@ jQuery ->
   $.each $("[data-time]"), ( index, ele ) ->
     $(ele).html( prettyDate( new Date( $(this).data("time") ) ) )
   
+  max_scroll = $(window).height() - document.body.clientHeight
+
   $(window).scroll ->
     scroll_pos = window.pageYOffset
     sidebar_pos = $("#sidebar").offset().top
-    offset = if (scroll_pos > sidebar_pos && $(window).width() > 640) then scroll_pos - sidebar_pos + 10 else 5
-    $("#sidebar").css("padding-top", offset + "px")
+    if scroll_pos < max_scroll
+      offset = if (scroll_pos > sidebar_pos && $(window).width() > 640) then scroll_pos - sidebar_pos + 10 else 5
+      $("#sidebar").css("padding-top", offset + "px")
   
 
   # tracking stuff

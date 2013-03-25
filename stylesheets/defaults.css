@@ -30,7 +30,7 @@ body {
   float: left; }
 
 .muted {
-  color: #999; }
+  color: #868789; }
 
 .colour-1 {
   color: #cc9944; }
@@ -99,12 +99,10 @@ a, .as-link {
   a:hover, .as-link:hover {
     color: #435a65; }
   a.button, .as-link.button {
-    border-radius: 2px;
-    padding: 3px 7px;
-    margin: 10px 0;
-    background-color: #f0f0f0;
-    border: 1px solid #dddddd;
-    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    padding: 4px 7px;
+    font-size: 12px;
+    border: 1px solid #eeeeee;
     color: #435a65;
     display: inline-block;
     vertical-align: baseline;
@@ -112,9 +110,17 @@ a, .as-link {
     *display: inline;
     *vertical-align: auto; }
     a.button:hover, .as-link.button:hover {
-      box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1); }
+      border-color: #4d6774; }
+    a.button.green, .as-link.button.green {
+      background-color: #44aa77;
+      color: #f3faf6; }
+    a.button.rss, .as-link.button.rss {
+      padding-left: 18px;
+      background-image: url(/images/rss.png);
+      background-repeat: no-repeat;
+      background-position: 6px center; }
     a.button.mini, .as-link.button.mini {
-      padding: 1px 8px;
+      padding: 1px 5px;
       font-size: 11px;
       text-transform: uppercase; }
   a.text-link, .as-link.text-link {
