@@ -8,7 +8,7 @@ body {
   body, body * {
     -webkit-font-smoothing: antialiased; }
   body, body input[type="email"], body input[type="number"], body input[type="password"], body input[type="search"], body input[type="tel"], body input[type="text"], body input[type="url"], body input[type="color"], body input[type="date"], body input[type="datetime"], body input[type="datetime-local"], body input[type="month"], body input[type="time"], body input[type="week"] {
-    font-family: "Varela Round", helvetica, arial, sans-serif;
+    font-family: "Noto Sans", helvetica, arial, sans-serif;
     font-size: 14px; }
 
 .hide {
@@ -51,13 +51,39 @@ img {
 form {
   margin: 0; }
 
-h1, h2, h3, h4, h5, h6 {
+span {
   font-weight: 400; }
 
-ul, li {
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700; }
+
+blockquote:before {
+  content: " “";
+  position: absolute;
+  margin-top: 25px;
+  color: #d0d0d0;
+  margin-left: -30px;
+  font-size: 50px;
+  line-height: 0;
+  font-family: Arial; }
+
+ul.posts, ul.posts li {
   margin: 0;
   padding: 0;
   list-style: none; }
+
+ul {
+  list-style: square; }
+
+ol, ul {
+  margin: 0;
+  padding: 0 0 0 25px; }
+  ol li, ul li {
+    font-weight: 700;
+    color: #999; }
+  ol *, ul * {
+    font-weight: normal;
+    color: #0a1811; }
 
 hr {
   border: 0;

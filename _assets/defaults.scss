@@ -6,7 +6,7 @@ body {
   background: $background;
   color: darken($green, 35%);
   &, #{$all-text-inputs} { 
-    font-family: "Varela Round", helvetica, arial, sans-serif; 
+    font-family: "Noto Sans", helvetica, arial, sans-serif; 
     font-size: 14px;
   }
   line-height: 24px;
@@ -26,8 +26,14 @@ body {
 .text-big { font-size: 24px; line-height: 1em; }
 img { vertical-align: middle; }
 form { margin: 0; }
-h1, h2, h3, h4, h5, h6 { font-weight: 400; }
-ul, li { margin: 0; padding: 0; list-style: none; }
+span { font-weight: 400; }
+h1, h2, h3, h4, h5, h6 { font-weight: 700; }
+blockquote {
+  &:before { content: " “"; position: absolute; margin-top: 25px; color: #d0d0d0; margin-left: -30px; font-size: 50px; line-height: 0; font-family: Arial; }
+}
+ul.posts { &, li { margin: 0; padding: 0; list-style: none; } }
+ul { list-style: square }
+ol, ul { margin: 0; padding: 0 0 0 25px; li { font-weight: 700; color: #999; } * { font-weight: normal; color: darken($green, 40%); } }
 hr { 
   border: 0; margin: 20px 0 30px;  text-align: center;
   width: 100%; overflow: hidden; height: 10px;

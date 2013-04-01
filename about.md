@@ -3,18 +3,6 @@ layout: onepage
 title: About
 ---
 
-about
+> Unscientific anecdotes about chronic pain. 
 
-about
-
-about
-
-about
-
-about
-
-about
-
-about
-
-about
+About.

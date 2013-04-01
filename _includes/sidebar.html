@@ -26,12 +26,13 @@
     </div>
   </section>
   <section>
-    <h3>MOST POPULAR POSTS</h3>
     {% if site.related_posts %}
+      <h3>RELATED POSTS</h3>
       {% for post in site.related_posts, limit: 4 %}
         <div class="item"><a href="{{ post.url }}">{{ post.title }}</a></div>
       {% endfor %}
     {% else %}
+      <h3>MOST POPULAR POSTS</h3>
       {% for post in site.posts, limit: 4 %}
         <div class="item"><a href="{{ post.url }}">{{ post.title }}</a></div>
       {% endfor %}

@@ -15,8 +15,9 @@ header, footer {
     color: #303038;
     padding: 8px 10px;
     text-align: center;
+    width: 80px;
     border-radius: 3px;
-    &:hover, &.active { -webkit-text-stroke: 1px rgba(0,0,0,0.3); @include transition(none !important); }
+    &:hover, &.active { color: #000; }
   }
   div.nav { opacity: 0.35; @include transition(all, 0.6s); }
   &:hover div.nav { opacity: 1; }
