@@ -62,7 +62,6 @@ footer {
   margin-top: 20px;
   .item { margin-bottom: 8px; }
   a { line-height: 1.3em; }
-  h4 { text-transform: uppercase; }
 }
 
 .wrapper {
@@ -87,23 +86,25 @@ h2 { margin-top: 0; font-size: 20px; }
 #sidebar {
   @include inline-block;
   @include box-sizing(border-box);
-  padding: 5px 10px 10px;
+  padding: 5px 12px 10px;
   width: 30%;
+  background: #f9f8f9;
   vertical-align: top;
+  border-radius: 3px;
   > section {
     margin-bottom: 15px;
-    .item { padding: 0 15px 15px; }
+    &, * { font-size: 13px; }
+    .item { padding: 0 0 15px; }
     input { width: 100%; }
     h3 {
-      margin: 0 0 12px;
+      margin: 0 0 8px;
       text-transform: uppercase;
-      padding: 6px 10px 2px 3px;
-      font-size: 13px; color: #000;
+      padding: 2px 0;
+      color: #000;
     }
     p { margin: 0; }
     a {
       line-height: 1.3em;
-      font-size: 13px;
     }
   }
 }

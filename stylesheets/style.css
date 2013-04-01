@@ -102,7 +102,8 @@ a, .as-link {
     border-radius: 3px;
     padding: 4px 7px;
     font-size: 12px;
-    border: 1px solid #eeeeee;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
     color: #435a65;
     display: inline-block;
     vertical-align: baseline;
@@ -321,8 +322,6 @@ footer {
     margin-bottom: 8px; }
   footer a {
     line-height: 1.3em; }
-  footer h4 {
-    text-transform: uppercase; }
 
 .wrapper {
   -webkit-box-sizing: border-box;
@@ -363,26 +362,28 @@ h2 {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 5px 10px 10px;
+  padding: 5px 12px 10px;
   width: 30%;
-  vertical-align: top; }
+  background: #f9f8f9;
+  vertical-align: top;
+  border-radius: 3px; }
   #sidebar > section {
     margin-bottom: 15px; }
+    #sidebar > section, #sidebar > section * {
+      font-size: 13px; }
     #sidebar > section .item {
-      padding: 0 15px 15px; }
+      padding: 0 0 15px; }
     #sidebar > section input {
       width: 100%; }
     #sidebar > section h3 {
-      margin: 0 0 12px;
+      margin: 0 0 8px;
       text-transform: uppercase;
-      padding: 6px 10px 2px 3px;
-      font-size: 13px;
+      padding: 2px 0;
       color: #000; }
     #sidebar > section p {
       margin: 0; }
     #sidebar > section a {
-      line-height: 1.3em;
-      font-size: 13px; }
+      line-height: 1.3em; }
 
 ul.posts li {
   opacity: 0.8;
