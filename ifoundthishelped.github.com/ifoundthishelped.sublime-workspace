@@ -519,6 +519,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "ifoundthishelped/_includes/sidebar.html",
+			"settings":
+			{
+				"buffer_size": 1628,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -576,6 +584,10 @@
 	},
 	"file_history":
 	[
+		"/Users/robertheaton/Dropbox/RobertHeaton/ifoundthishelped.github.com/ifoundthishelped/_site/index.html",
+		"/Users/robertheaton/Dropbox/RobertHeaton/ifoundthishelped.github.com/ifoundthishelped/_includes/sidebar.html",
+		"/Users/robertheaton/Dropbox/RobertHeaton/ifoundthishelped.github.com/ifoundthishelped/_posts/2013-04-01-safety.md",
+		"/Users/robertheaton/Dropbox/RobertHeaton/ifoundthishelped.github.com/ifoundthishelped/_posts/2013-03-28-reset.md",
 		"/Users/robertheaton/Dropbox/PingPanel/Code/CopyIn/Gemfile",
 		"/Users/robertheaton/Dropbox/PingPanel/Code/CopyIn/app/models/user.rb",
 		"/Users/robertheaton/Dropbox/PingPanel/Code/CopyIn/app/views/error_mailer/authentication_failed.html.haml",
@@ -699,11 +711,7 @@
 		"/Users/robertheaton/Dropbox/PingPanel/Code/CopyIn/app/helpers/action_links_helper.rb",
 		"/Users/robertheaton/Dropbox/PingPanel/Code/CopyIn/extras/full_contact_data_loader.rb",
 		"/Users/robertheaton/Dropbox/PingPanel/Code/CopyIn/spec/integration/onboarding_and_signup_spec.rb",
-		"/Users/robertheaton/Dropbox/PingPanel/Code/CopyIn/config/initializers/tire.rb",
-		"/Users/robertheaton/Dropbox/PingPanel/Code/CopyIn/spec/spec_helper.rb",
-		"/Users/robertheaton/Dropbox/PingPanel/Code/CopyIn/features/support/env.rb",
-		"/Users/robertheaton/Dropbox/PingPanel/Code/CopyIn/db/schema.rb",
-		"/Users/robertheaton/Dropbox/PingPanel/Code/CopyIn/config/application.rb"
+		"/Users/robertheaton/Dropbox/PingPanel/Code/CopyIn/config/initializers/tire.rb"
 	],
 	"find":
 	{
@@ -711,7 +719,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
 			"",
@@ -724,6 +732,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"feed",
+			"test@",
 			"markdown",
 			"admin",
 			"like",
@@ -849,9 +859,7 @@
 			"no_name_supplied",
 			"instances",
 			"missing.png",
-			"profile_img",
-			"_object",
-			":focus"
+			"profile_img"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -887,8 +895,37 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "ifoundthishelped/_includes/sidebar.html",
+					"settings":
+					{
+						"buffer_size": 1628,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								315,
+								315
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
