@@ -49,7 +49,7 @@ hr {
   border-radius: 3px; margin: 0;
   box-shadow: none; outline: none;
   @include box-sizing(border-box);
-  padding: 4px 8px;
+  padding: 2px 5px; font-size: 13px !important;
   -webkit-appearance: none;
 }
 
@@ -63,16 +63,20 @@ a, .as-link {
   &:hover { color: darken($blue, 20%); }
   &.button {
     border-radius: 3px;
-    padding: 4px 7px;
+    padding: 3px 8px 4px;
     font-size: 12px;
     border: 1px solid #e0e0e0;
     background-color: #fff;
     color: darken($blue, 20%);
+    width: auto;
     @include inline-block;
-    &:hover { border-color: darken($blue, 15%); }
+    box-shadow: inset 0 -1px 1px rgba(0,0,0,0.1);
+    &:active { box-shadow: inset 0 1px 1px rgba(0,0,0,0.15); }
     &.green {
+      border: 0;
       background-color: $green;
-      color: lighten($green, 50%);
+      color: lighten($green, 70%);
+      font-weight: bold;
     }
     &.rss {
       padding-left: 18px;
@@ -81,8 +85,8 @@ a, .as-link {
       background-position: 6px center;
     }
     &.mini {
-      padding: 1px 5px;
-      font-size: 11px;
+      padding: 1px 5px 3px;
+      font-size: 11px; font-weight: bold;
       text-transform: uppercase;
     }
   }

@@ -94,9 +94,10 @@ h2 { margin-top: 0; font-size: 20px; }
   border-radius: 3px;
   > section {
     margin-bottom: 15px;
-    &, * { font-size: 13px; }
+    &, a, p { font-size: 13px; }
     .item { padding: 0 0 15px; }
-    input { width: 100%; }
+    .as-link { margin-top: 5px; }
+    #{$all-text-inputs} { width: 100%; }
     h3 {
       margin: 0 0 8px;
       text-transform: uppercase;

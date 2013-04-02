@@ -2,13 +2,10 @@
   <section>
     <h3>GET UPDATES</h3>
     <div class="item">
-      <form>
-        <span class="muted small">Subscribe by email</span>
-        <input type="email" placeholder="test@domain.com" />
-      </form>
+      {% include mailchimp.html %}
     </div>
     <div class="item">
-      <a href="/feed.xml" class="button rss">RSS Feed</a>
+      <a href="/feed.xml" target="_blank" class="button rss">Get RSS Feed</a>
     </div>
     <div class="item">
       <div class="fb-like" data-href="http://www.facebook.com/ifoundthishelped" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
