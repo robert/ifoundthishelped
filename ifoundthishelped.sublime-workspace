@@ -526,6 +526,26 @@
 				"buffer_size": 527,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "_posts/2013-04-02-writing.md",
+			"settings":
+			{
+				"buffer_size": 2496,
+				"line_ending": "Unix",
+				"name": "---"
+			}
+		},
+		{
+			"contents": "---\nlayout: post\ntitle: Reset\n---\nMy pain is affected by a lot more than physical over-exertion. It gets worse if I'm tired, sad or stressed. But I'm also starting to see it come and go for no apparent reason at all. I might be having a perfectly good day, even a good week, and then suddenly it pokes its head in. I find that it's important not to get too stressed or upset about this, as it will only make things worse, but it's still something that would be good to be able to limit. What should have been a calm morning of writing and reading can easily become an agitated and distracted few hours that spill into and consume the rest of the day too.\n\nBut sometimes I go to the shops or go to meet some friends or play some music or something, and then suddenly notice that everything is back to normal again. It's only recently that I've really appreciated this link, and have started to consciously use it to my advantage. I know that gritting my teeth and continuing to write or read rarely results in anything changing, and this stubbornness tends to make the quality of my concentration and experience gradually deteriorate.\n\nSo I've started using Resets. A Reset is an activity that allows you to draw a line under whatever has happened so far today and give the rest of the day a clean start. It's when you stop gritting your teeth and instead take a deliberately crafted break. My favourite is the Reset Walk, which in all honesty is just a walk. It tends to be about 5-20 mins long, has no fixed route, and has no goal other than to get there and back again. I usually try and meditatively watch my internal and external worlds go by, although most of the time I end up thinking about Mario Kart and other nonsense. When I get back, I often do a few short stretches and might make a cup of tea. Then I can calmly go back to whatever I was doing before.\n\nThe worst of any pain will almost always have gone. Frustrations are largely subsided. It doesn't matter how I felt Before The Rest, because After The Reset everything starts fresh. The Reset doesn't have to be a walk; I've done plenty of different things in the past. I've found that a good Reset should:\n\n1. _Take you somewhere else._ It doesn't have to be far, it doesn't even have to be outside, but it should be somewhere qualitatively different to where you are now. A different floor of the office, the kitchen, the garden, it doesn't particularly matter. Just far enough to make a distinction between the Reset and the norm.\n\n2. _Distract you._ Again, it doesn't have to be anything fancy. Just something that requires a bit of concentration to take your mind off whatever pain and frustrations are bugging you now.\n\n3. _Be a ritual._ If a Reset becomes a ritual then it becomes easier to do, more enjoyable and much more calming. Putting on your shoes stops being something annoying preventing you from going walking; it becomes part of the ritual. Walking to the kitchen stops being a tedious waste of time; it becomes part of the ritual.\n\n4. _Be goalless._ Calling a time-out on whatever you were trying to do and getting up to do something else is already a big and surprisingly difficult accomplishment. I used to demand that I thought up new writing ideas whilst I was walking; 70% of the time I would come back disappointed and just as on edge as when I left. Now I just think about whatever comes to mind, and I always succeed at that. It's fine if you coincidentally achieve something during your Reset, but it mustn't be a requirement. There are many occasions where goals help, but a Reset is not one of them.\n\nYou might want to Reset by indoor putting, making tea, playing piano, doing a puzzle, poking your head in on a friend, doing some filing, stretching, meditating, going up and down in the lift, whatever. As long as it distracts you for a little while and allows you to start again fresh, it's a good Reset. So next time you're having a tough time, try getting up and developing a Reset. You're not giving up, you're not expecting miracles. You're just getting outside your own head for a bit.\n\nAnd let me know in the comments or <a href=\"mailto:bobjheaton@gmail.com\">via email</a> what you find helps you, it might work for other people too.",
+			"file": "_posts/2013-03-28-reset.md",
+			"file_size": 4238,
+			"file_write_time": 1364936560000000,
+			"settings":
+			{
+				"buffer_size": 4237,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -895,7 +915,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -919,6 +939,59 @@
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "_posts/2013-04-02-writing.md",
+					"settings":
+					{
+						"buffer_size": 2496,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								412,
+								412
+							]
+						],
+						"settings":
+						{
+							"auto_name": "---",
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "_posts/2013-03-28-reset.md",
+					"settings":
+					{
+						"buffer_size": 4237,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								33,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
