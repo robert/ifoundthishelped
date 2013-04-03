@@ -445,3 +445,36 @@ section.share-links {
     height: 20px; }
     section.share-links .button.spaced {
       margin-right: 30px; }
+
+section.navigation {
+  *zoom: 1;
+  position: relative;
+  margin: 0 0 15px; }
+  section.navigation:before, section.navigation:after {
+    content: " ";
+    display: table; }
+  section.navigation:after {
+    clear: both; }
+  section.navigation a {
+    width: 50%;
+    opacity: 0.8; }
+    section.navigation a span {
+      opacity: 0;
+      -webkit-transition: all, 0.3s;
+      -moz-transition: all, 0.3s;
+      -ms-transition: all, 0.3s;
+      -o-transition: all, 0.3s;
+      transition: all, 0.3s; }
+    section.navigation a:hover {
+      opacity: 1; }
+      section.navigation a:hover span {
+        opacity: 1; }
+
+.box {
+  background: #f4f5f6;
+  margin: 5px 0 20px;
+  padding: 10px 8px;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400; }

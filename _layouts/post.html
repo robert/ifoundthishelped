@@ -19,7 +19,8 @@
           <span class="small muted" data-time="{{ page.date }}">{{ page.date | date_to_string }}</span>
         </h2>
         <div class="text-body">{{ content }}</div>
-        <a href="/archive" class="link muted">View all posts &raquo;</a>
+        {% include post_footer.html %}
+        {% include recent_posts.html %}
         {% include social_links.html %}
         {% include disqus.html %}
       </div>

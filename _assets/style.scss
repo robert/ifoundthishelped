@@ -134,3 +134,18 @@ section.share-links {
     &.spaced { margin-right: 30px; }
   }
 }
+section.navigation {
+  @include clearfix;
+  position: relative;
+  margin: 0 0 15px;
+  a {
+    width: 50%;
+    opacity: 0.8;
+    span { opacity: 0; @include transition(all, 0.3s); }
+    &:hover { opacity: 1; span { opacity: 1; } }
+  }
+}
+.box {
+  background: #f4f5f6; margin: 5px 0 20px; padding: 10px 8px; border-radius: 3px;
+  text-align: center; font-size: 13px; font-weight: 400;
+}
