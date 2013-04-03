@@ -36,10 +36,11 @@ ul { list-style: square }
 ol, ul { margin: 0; padding: 0 0 0 25px; li { font-weight: 700; color: #999; } * { font-weight: normal; color: darken($green, 40%); } }
 hr { 
   border: 0; margin: 20px 0 30px;  text-align: center;
-  width: 100%; overflow: hidden; height: 10px;
+  width: 100%; overflow: hidden; height: 6px;
   &:before { 
     content: "╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲"; 
-    color: #afafaf; font-size: 10px;
+    color: #cfcfcf; font-size: 20px;
+    letter-spacing: -13px;
     font-family: arial; font-weight: bold;
   }
 }

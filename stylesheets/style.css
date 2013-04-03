@@ -91,11 +91,12 @@ hr {
   text-align: center;
   width: 100%;
   overflow: hidden;
-  height: 10px; }
+  height: 6px; }
   hr:before {
     content: "╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲";
-    color: #afafaf;
-    font-size: 10px;
+    color: #cfcfcf;
+    font-size: 20px;
+    letter-spacing: -13px;
     font-family: arial;
     font-weight: bold; }
 
