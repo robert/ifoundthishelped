@@ -45,7 +45,7 @@ header, footer {
 }
 header {
   padding: 30px 0 25px;
-  h1:hover { 
+  h1 a:hover { 
     #cubes {
       background-image: url(/images/fav-orange.png);
       @include animation(shake 0.2s linear infinite);
