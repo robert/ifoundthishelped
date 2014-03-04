@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <meta content='{{ page.title }} - {{ site.title }}' name='title' />
+    <meta content='{{ page.title }} - {{ site.title }}' name='og:title' />
+    <title>{{ page.title }} - {{ site.title }}</title>
+    {% include head.html %}
+    {% include ga.html %}
+  </head>
+  <body id="post">
+    
+    {% include header.html %}
+    <div class="wrapper">
+      <div id="content">
+        <h2>
+          <a href="{{ post.url }}">
+            {{ page.title }}
+          </a><br />
+          <span class="small muted">{{ page.date | date_to_string }} - </span>
+          <span class="small muted" data-time="{{ page.date }}">{{ page.date | date_to_string }}</span>
+        </h2>
+        <div class="text-body">{{ content }}</div>
+        {% include post_footer.html %}
+        {% include recent_posts.html %}
+        {% include social_links.html %}
+        {% include disqus.html %}
+      </div>
+      {% include sidebar.html %}
+    </div>
+    {% include footer.html %}
+
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<footer>
+  <div class="wrapper">
+    <div class="two-ups">
+      <h4>MOST POPULAR POSTS</h4>
+      {% if site.related_posts %}
+        {% for post in site.related_posts, limit: 4 %}
+          <div class="item"><a href="{{ post.url }}">{{ post.title }}</a></div>
+        {% endfor %}
+      {% else %}
+        {% for post in site.posts, limit: 4 %}
+          <div class="item"><a href="{{ post.url }}">{{ post.title }}</a></div>
+        {% endfor %}
+      {% endif %}
+    </div>
+    <div class="two-ups a-r">
+      <h4>
+        What have you found that helped?
+      </h4>
+      <a href="mailto:bobjheaton@gmail.com">I'd love to know.</a>
+    </div>
+  </div>
+</footer>

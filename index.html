@@ -1,0 +1,20 @@
+---
+layout: index
+---
+
+<ul class="posts">
+  {% for post in site.posts %}
+  <li>
+    <h2>
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a><br />
+      <span class="small muted">{{ post.date | date_to_string }} - </span>
+      <span class="small muted" data-time="{{ post.date }}">{{ post.date | date_to_string }}</span>
+    </h2>
+    <div class="text-body">{{ post.content | strip_html | truncate: 260 }}</div>
+    <a href="{{ post.url }}" class="text-link">Read More</a>
+    <hr>
+  </li>
+  {% endfor %}
+</ul>

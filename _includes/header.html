@@ -1,0 +1,15 @@
+<header>
+  <div class="wrapper">
+    <div class="nav pull-right">
+      <a href="/about" class="link {% if page.title == 'About' %} active {% endif %}">About</a>
+      <a href="/archive" class="link {% if page.title == 'Archive' %} active {% endif %}">Archive</a>
+    </div>
+    <h1>
+      <a href="/">
+        <div id="cubes" class="pull-left"></div>
+        {{site.title}}.
+      </a>
+      <p class="muted">{{site.description}}</p>
+    </h1>
+  </div>
+</header>

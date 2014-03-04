@@ -1,0 +1,24 @@
+@media (max-width: 640px) {
+  #content, #sidebar, .two-ups {
+    display: block;
+    width: 100% !important;
+    text-align: left;
+  }
+  #sidebar {
+    padding: 0;
+    section {
+      border-top: 1px dotted #e0e0e0;
+      padding-top: 20px;
+    }
+  }
+}
+@media (max-width: 480px) {
+  header {
+    padding-top: 45px;
+    .nav.pull-right {
+      float: none;
+      position: absolute;
+      top: -52px; right: 5px;
+    }
+  }
+}

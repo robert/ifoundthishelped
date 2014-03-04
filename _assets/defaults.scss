@@ -1,0 +1,147 @@
+@import "bourbon/bourbon";
+@import "colours";
+
+body { 
+  &, * { -webkit-font-smoothing: antialiased; }
+  background: $background;
+  color: darken($green, 35%);
+  &, #{$all-text-inputs} { 
+    font-family: "Noto Sans", helvetica, arial, sans-serif; 
+    font-size: 14px;
+  }
+  line-height: 24px;
+  padding: 0;
+  margin: 0;
+}
+.hide { display: none; }
+.a-r { text-align: right; }
+.a-c { text-align: center; }
+.small { font-size: 11px }
+.pull-right { float: right; }
+.pull-left { float: left; }
+.muted { color: #868789; }
+.colour-1 { color: #c94 }
+.colour-2 { color: #925}
+.colour-3 { color: #484 }
+.text-big { font-size: 24px; line-height: 1em; }
+img { vertical-align: middle; }
+form { margin: 0; }
+span { font-weight: 400; }
+h1, h2, h3, h4, h5, h6 { font-weight: 700; }
+blockquote {
+  &:before { content: " “"; position: absolute; margin-top: 25px; color: #d0d0d0; margin-left: -30px; font-size: 50px; line-height: 0; font-family: Arial; }
+}
+ul.posts { &, li { margin: 0; padding: 0; list-style: none; } }
+ul { list-style: square }
+ol, ul { margin: 0; padding: 0 0 0 25px; li { font-weight: 700; color: #999; } * { font-weight: normal; color: darken($green, 40%); } }
+hr { 
+  border: 0; margin: 20px 0 30px;  text-align: center;
+  width: 100%; overflow: hidden; height: 6px;
+  &:before { 
+    content: "╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲"; 
+    color: #cfcfcf; font-size: 20px;
+    letter-spacing: -13px;
+    font-family: arial; font-weight: bold;
+  }
+}
+#{$all-text-inputs} {
+  font-family: "Varela Round", helvetica, arial, sans-serif;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px; margin: 0;
+  box-shadow: none; outline: none;
+  @include box-sizing(border-box);
+  padding: 2px 5px; font-size: 13px !important;
+  -webkit-appearance: none;
+}
+
+a, .as-link {
+  @include transition(all, 0.3s);
+  text-decoration: none; 
+  color: darken($blue, 10%);
+  &:active {
+    position: relative; top: 1px;
+  }
+  &:hover { color: darken($blue, 20%); }
+  &.button {
+    border-radius: 3px;
+    padding: 3px 8px 4px;
+    font-size: 12px;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    color: darken($blue, 20%);
+    width: auto;
+    @include inline-block;
+    box-shadow: inset 0 -1px 1px rgba(0,0,0,0.1);
+    &:active { box-shadow: inset 0 1px 1px rgba(0,0,0,0.15); }
+    &.green {
+      border: 0;
+      background-color: $green;
+      color: lighten($green, 70%);
+      font-weight: bold;
+    }
+    &.rss {
+      padding-left: 18px;
+      background-image: url(/images/rss.png);
+      background-repeat: no-repeat;
+      background-position: 6px center;
+    }
+    &.mini {
+      padding: 1px 5px 3px;
+      font-size: 11px; font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+  &.text-link {
+    padding: 2px 0;
+    margin: 10px 0;
+    line-height: 1em;
+    border-bottom: 1px dotted #e0e0e0;
+    color: darken($blue, 0%);
+    @include inline-block;
+    &:hover { color: darken($blue, 10%); border-bottom: 1px solid $blue; }
+  }
+  &.big-button {
+    @include transition(all, 0.2s);
+    display: block;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 24px;
+    padding: 8px 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    border-width: 0;
+    border-style: solid;
+    border-color: #8ab;
+    background: #6f8f9f;
+    @include box-shadow(0 1px 2px rgba(0,0,0,0.3));
+    &:hover { 
+      background: #608090;
+      @include box-shadow( 0px 1px 1px rgba(0,0,0,0.2), inset 0 1px 3px rgba(255,255,255,0.55), inset 0 -1px 3px rgba(0,0,0,0.2));
+    }
+    &:active { @include box-shadow(inset 0 1px 2px rgba(0,0,0,0.4)); }
+    &.red {
+      border-color: #ddacac;
+      background: #bf6653;
+      &:hover { background: #bf4634; }
+    }
+    &.yellow {
+      border-color: #faddaa;
+      background: #d0a033;
+      &:hover { background: #cc9011; }
+    }
+    &.green {
+      border-color: #ddeed0;
+      background: #40914A;
+      &:hover { background: #308140; }
+    }
+  }
+}
+.two-ups {
+  width: 49%;
+  float: left;
+  &:not(:last-of-type) { margin-right: 2%; }
+}

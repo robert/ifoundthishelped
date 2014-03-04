@@ -1,0 +1,18 @@
+<section class="navigation">
+  {% if page.previous %}
+    <div class="pull-left">
+      <a href="{{ page.previous.url }}">
+        <i class='icon-angle-left'></i>
+        &lt; {{page.previous.title}} <span class="muted small">previous post</span>
+      </a>
+    </div>
+  {% endif %}
+  {% if page.next %}
+    <div class="pull-right">
+      <a href="{{page.next.url}}">
+        <span class="muted small">next post</span> {{page.next.title}} &gt; 
+        <i class='icon-angle-right'></i>
+      </a>
+    </div>
+  {% endif %}
+</section>

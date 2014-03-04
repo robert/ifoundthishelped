@@ -1,0 +1,9 @@
+.sass-cache/
+_drafts/
+_mailchimp/
+_site/
+*.swp
+*.scssc
+.DS_Store
+.rvmrc
+*~
